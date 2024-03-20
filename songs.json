@@ -1,0 +1,25 @@
+{
+	"songs": [
+	{
+		"song_id" : "0",
+		"title": "a",
+		"author": "a",
+		"lyrics": "aaaaaaaaaaaaaaaaaaaaaaaaa",
+		"thumbnail": "a.png"
+	},
+	{
+		"song_id" : "1",
+		"title": "b",
+		"author": "b",
+		"lyrics": "bbbbbbbbbbbbbbbbbbbbbbbbb",
+		"thumbnail": "b.png"
+	},
+	{
+		"song_id" : "2",
+		"title": "c",
+		"author": "c",
+		"lyrics": "ccccccccccccccccccccccccc",
+		"thumbnail": "c.png"
+	}
+	]
+}
