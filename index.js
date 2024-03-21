@@ -10,6 +10,12 @@ app.get('/', function (req, res) {
     });
 
 });
+
+app.get('/api/album-songs', function (req, res){ 
+  res.setHeader('Content-Type', 'application/json'); 
+  res.end(JSON.stringify(songs)); 
+}); 
+
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
 });
