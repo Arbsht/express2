@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title Sito con canzoni
+    title #{song.song_id}
     
     link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'
     integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous')
@@ -12,20 +12,22 @@ html
 
 body 
     div(class="container-fluid p-5 bg-primary text-white text-center")
-        h1 Sito con canzoni
+        h1 #{song.title}
     br
     br
     br
     br
+    
     div(class="d-flex justify-content-center")
         .container
-            each song in songs
-                .row 
+            .row 
                 .col-sm-4 
-                    a(href=`song?id=${song.song_id}`)
-                        img(src=`./images/${song.thumbnail}`)
+                    img(src=`./images/${song.thumbnail}`)
                 .com-sm-6
                     h1 #{song.title}
                     h2 #{song.author}
-                h2 #{song.title} - #{song.author}
-    
+                    h3 !{song.lyrics}
+       
+        
+            h3
+                a(href="/") vai indietro

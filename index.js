@@ -16,6 +16,13 @@ app.get('/api/album-songs', function (req, res){
   res.end(JSON.stringify(songs)); 
 }); 
 
+app.get('/song', (req, res) => {
+  const song = songs.songs.find((p) => p.song_id === req.query.id);
+  res.render('song', {
+    song
+  });
+});
+
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
 });
